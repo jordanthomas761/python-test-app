@@ -1,0 +1,15 @@
+on: push
+
+jobs:
+  build-app:
+    runs-on: self-hosted
+    name: A job to say hello
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: build app
+        working-directory: python-test-app
+        run: docker build -t localhost:32000/python-test-app .
+      - name: upload app
+        working-directory: python-test-app
+        run: docker push localhost:32000/python-test-app
