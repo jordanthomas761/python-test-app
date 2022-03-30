@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v2
       - name: build app
         working-directory: python-test-app
-        run: docker build -t ${{ secrets.REPOSITORY_HOST }}:32000/python-test-app .
+        run: docker build -t registry.container-registry.svc.cluster.local:5000/python-test-app .
       - name: upload app
         working-directory: python-test-app
-        run: docker push ${{ secrets.REPOSITORY_HOST }}:32000/python-test-app
+        run: docker push registry.container-registry.svc.cluster.local:5000/python-test-app
