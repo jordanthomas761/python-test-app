@@ -2,6 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: python-fast-api
-  namespace: argocd
+  namespace: fast-api
 spec:
   roles:
