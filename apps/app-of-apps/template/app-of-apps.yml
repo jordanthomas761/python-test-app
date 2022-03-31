@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: fast-api
-    name: in-cluster
+    name: {{ .Values.spec.destination.server }}
   project: default
   source:
     path: apps/python-test-app
