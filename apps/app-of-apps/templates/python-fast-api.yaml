@@ -3,3 +3,4 @@ kind: AppProject
 metadata:
   name: python-fast-api
   namespace: argocd
+spec:
