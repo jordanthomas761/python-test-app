@@ -5,5 +5,3 @@ metadata:
   namespace: argocd
 spec:
   roles:
-    policies:
-      groups:
