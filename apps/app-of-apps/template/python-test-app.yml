@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: fast-api
-    name: {{ .Values.spec.destination.server }}
+    server: {{ .Values.spec.destination.server }}
   project: default
   source:
     path: apps/python-test-app
