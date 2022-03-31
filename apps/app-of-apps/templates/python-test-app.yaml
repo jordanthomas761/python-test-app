@@ -8,9 +8,9 @@ metadata:
 spec:
   destination:
     namespace: fast-api
-    server: https://kubernetes.default.svc
+    server: {{ .Values.spec.destination.server }}
   project: default
   source:
     path: apps/python-test-app
-    repoURL: https://github.com/jordanthomas761/python-test-app
-    targetRevision: main
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: {{ .Values.spec.source.targetRevision }}
