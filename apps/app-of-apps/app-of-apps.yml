@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: fast-api
     name: in-cluster
-  project: python-test-app
+  project: default
   source:
     path: apps/python-test-app
     repoURL: https://github.com/jordanthomas761/python-test-app
