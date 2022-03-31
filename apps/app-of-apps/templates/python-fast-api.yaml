@@ -4,3 +4,6 @@ metadata:
   name: python-fast-api
   namespace: argocd
 spec:
+  roles:
+    policies:
+      groups:
