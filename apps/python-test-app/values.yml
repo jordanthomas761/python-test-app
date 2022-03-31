@@ -1,4 +1,4 @@
-python-test-app:
+spec:
   destination:
     server: https://kubernetes.default.svc
   source:
