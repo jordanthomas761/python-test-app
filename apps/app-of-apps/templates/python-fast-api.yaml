@@ -4,4 +4,3 @@ metadata:
   name: python-fast-api
   namespace: fast-api
 spec:
-  roles:
