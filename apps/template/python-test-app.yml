@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: fast-api
     server: {{ .Values.spec.destination.server }}
-  project: default
+  project: python-test-app
   source:
     path: python-test-app
     repoURL: {{ .Values.spec.source.repoURL }}

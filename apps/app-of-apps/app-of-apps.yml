@@ -9,8 +9,8 @@ spec:
   destination:
     namespace: default
     name: in-cluster
-  project: default
+  project: python-test-app
   source:
-    path: infra/apps
+    path: infra/python-test-app
     repoURL: https://github.com/jordanthomas761/python-test-app
     targetRevision: HEAD
