@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-app
+  name: python-test-app
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,6 +11,6 @@ spec:
     name: in-cluster
   project: python-test-app
   source:
-    path: infra/python-test-app
+    path: apps/python-test-app
     repoURL: https://github.com/jordanthomas761/python-test-app
     targetRevision: HEAD
