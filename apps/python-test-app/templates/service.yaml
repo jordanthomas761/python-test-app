@@ -5,7 +5,7 @@ metadata:
   namespace: fast-api
 spec:
   selector:
-    app: python-test-app-{{ .Values.enviorment }}
+    app: python-test-app-prod
   ports:
     - protocol: TCP
       port: 80
