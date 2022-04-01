@@ -16,4 +16,4 @@ spec:
           service:
             name: python-test-app-{{ .Values.enviorment }}
             port:
-              number: 8001
+              number: 80
