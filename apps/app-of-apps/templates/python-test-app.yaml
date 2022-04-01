@@ -16,7 +16,6 @@ spec:
     helm:
       valueFiles:
         - values-prod.yaml
-        - values-np.yml
   # syncPolicy:
   #     automated:
   #       prune: true
