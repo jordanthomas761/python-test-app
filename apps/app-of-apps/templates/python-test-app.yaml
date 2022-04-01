@@ -15,7 +15,7 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
       valueFiles:
-        - values-{{ regexFind ".*" }}.yaml
+        - values-{{ regexFind ".*" | prod }}.yaml
   # syncPolicy:
   #     automated:
   #       prune: true
