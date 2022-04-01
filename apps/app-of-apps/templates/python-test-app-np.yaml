@@ -16,7 +16,9 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
       values: |
-        enviorment: np
+      image: 
+        repository: 10.0.1.253:32000/python-test-app
+      enviorment: np
   syncPolicy:
       automated:
         prune: true
