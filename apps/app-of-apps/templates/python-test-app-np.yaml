@@ -17,7 +17,7 @@ spec:
     helm:
       values: |
       image: 
-        repository: 10.0.1.253:32000/python-test-app
+        repository: 10.0.1.253:32000/python-test-app:test
       enviorment: np
   syncPolicy:
       automated:
