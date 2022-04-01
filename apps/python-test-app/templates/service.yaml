@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: python-test-app
-  namespace: fast-api-{{ .Values.enviorment }}
+  name: python-test-app-{{ .Values.enviorment }}
+  namespace: fast-api
 spec:
   type: NodePort
   selector:
