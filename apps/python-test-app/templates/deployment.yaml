@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: python-test-app
+  namespace: fast-api-{{ .Values.enviorment }}
 spec:
   replicas: 1
   revisionHistoryLimit: 3
