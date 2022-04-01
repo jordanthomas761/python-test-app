@@ -8,6 +8,7 @@ metadata:
 spec:
   destination:
     server: {{ .Values.spec.destination.server }}
+    namespace: fast-api
   project: python-fast-api
   source:
     path: apps/python-test-app
@@ -17,3 +18,5 @@ spec:
       automated:
         prune: true
         selfHeal: true
+      syncOptions:
+        - CreateNamespace=true
