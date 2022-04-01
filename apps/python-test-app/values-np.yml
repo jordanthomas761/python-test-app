@@ -1,5 +1,4 @@
 image: 
   repository: localhost:32000/python-test-app
-  tag: latest
 
-enviorment: prod
+enviorment: np
