@@ -6,8 +6,10 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
+  helm:
+    valueFiles:
+      - values-*.yaml
   destination:
-    namespace: fast-api
     server: {{ .Values.spec.destination.server }}
   project: python-fast-api
   source:
