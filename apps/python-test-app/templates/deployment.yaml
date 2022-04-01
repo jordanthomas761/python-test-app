@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python-test-app
+  name: python-test-app-{{ .Values.enviorment }}
   namespace: fast-api
 spec:
   replicas: 1
