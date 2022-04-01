@@ -16,7 +16,6 @@ spec:
     helm:
       valueFiles:
         - values-prod.yaml
-        # - values-{{ regexFind ".*" | default "prod" }}.yaml
   # syncPolicy:
   #     automated:
   #       prune: true
