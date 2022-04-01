@@ -14,9 +14,8 @@ spec:
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
-      valueFiles:
-        - values-np.yml
-  # syncPolicy:
-  #     automated:
-  #       prune: true
-  #       self-heal: true
+      values: |
+        image: 
+          repository: localhost:32000/python-test-app
+
+        enviorment: np
