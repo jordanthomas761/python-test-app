@@ -15,7 +15,7 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
       valueFiles:
-        - values-prod.yaml
+        - {{ regexFindAll "values-.*\.yaml"}}
   # syncPolicy:
   #     automated:
   #       prune: true
