@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python-test-app-{{ .Values.enviorment }}
+  name: python-test-app
   namespace: fast-api
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: python-test-app
+      app: python-test-app-{{ .Values.enviorment }}
   template:
     metadata:
       labels:
-        app: python-test-app
+        app: python-test-app-{{ .Values.enviorment }}
     spec:
       containers:
       - image: "{{ .Values.image.repository }}"
