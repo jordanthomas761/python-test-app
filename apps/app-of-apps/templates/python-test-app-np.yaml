@@ -15,7 +15,4 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
       values: |
-        image: 
-          repository: localhost:32000/python-test-app
-
         enviorment: np
