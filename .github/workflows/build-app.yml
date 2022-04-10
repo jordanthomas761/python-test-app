@@ -3,7 +3,7 @@ on: [push, workflow_dispatch]
 jobs:
   build-app:
     runs-on: self-hosted
-    name: A job to say hello
+    name: build app
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -17,4 +17,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: upload app
         working-directory: python-test-app
-        run: docker push ${{ secrets.REPOSITORY_HOST }}/python-test-app:latest
+        run: docker push ${{ secrets.REPOSITORY_HOST }}/python-test-app:${{ github.sha }}
