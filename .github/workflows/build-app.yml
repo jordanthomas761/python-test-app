@@ -17,4 +17,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: upload app
         working-directory: python-test-app
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/python-test-app:latest
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/python-test-app:${{ github.sha }}
