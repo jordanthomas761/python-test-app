@@ -3,7 +3,7 @@ on:
 
 jobs:
   hello_world_job:
-    runs-on: arc-runner-set
+    runs-on: python-runners
     name: A job to say hello
     steps:
       # To use this repository's private action,
